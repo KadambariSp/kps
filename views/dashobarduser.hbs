@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="/styledashboard.css" />
+    <title>Dashboard</title>
+</head>
+
+<body id="body">
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav_icon" onclick="toggleSidebar()">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <div class="navbar__left">
+                <a class="active_link" href="#">User Dashboard</a>
+            </div>
+            <div class="navbar__right">
+                <a href="#">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </a>
+                <a href="#">
+                    <img width="30" src="/img/avatar.svg" alt="" />
+                    <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+                </a>
+            </div>
+        </nav>
+
+        <main>
+            <div class="main__container">
+                <!-- MAIN TITLE STARTS HERE -->
+
+                <div class="main__title">
+                    <img src="/img/h.svg" alt="" />
+                    <div class="main__greeting">
+                        <h1>Hello User!</h1>
+                        <p>Welcome to your dashboard</p>
+                    </div>
+                </div>
+
+                <!-- MAIN TITLE ENDS HERE -->
+
+                <!-- MAIN CARDS STARTS HERE -->
+                <div class="main__cards">
+                    <div class="card">
+                        <i class="fa fa-user-o fa-2x text-lightblue" aria-hidden="true"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Number of Housewives</p>
+                            <span class="font-bold text-title">578</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-calendar fa-2x text-red" aria-hidden="true"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Your Orders</p>
+                            <span class="font-bold text-title">24</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-video-camera fa-2x text-yellow" aria-hidden="true"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Recipes you liked</p>
+                            <span class="font-bold text-title">340</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- MAIN CARDS ENDS HERE -->
+
+            
+            </div>
+        </main>
+
+        <div id="sidebar">
+            <div class="sidebar__title">
+                <div class="sidebar__img">
+                    <img src="/img/h.svg" alt="logo" />
+                    <h1>User</h1>
+                </div>
+                <i onclick="closeSidebar()" class="fa fa-times" id="sidebarIcon" aria-hidden="true"></i>
+            </div>
+
+            <div class="sidebar__menu">
+                <div class="sidebar__link active_menu_link">
+                    <i class="fa fa-home"></i>
+                    <a href="#">Dashboard</a>
+                </div>
+                <h2>Menus</h2>
+                <div class="sidebar__link">
+                    <i class="fa fa-user-secret" aria-hidden="true"></i>
+                    <a href="/customer/account">Your Account</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-building-o"></i>
+                    <a href="/customer/viewitem">View Items</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-cutlery"></i>
+                    <a href="/customer/viewrecipe">View Recipies</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-archive"></i>
+                    <a href="/customer/orders">My Orders</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-handshake-o"></i>
+                    <a href="/customer/cart">Cart</a>
+                </div>
+                <h2>KPS</h2>
+                <div class="sidebar__link">
+                    <i class="fa fa-question"></i>
+                    <a href="#">Policy</a>
+                </div>
+                <div class="sidebar__link">
+                    <i class="fa fa-sign-out"></i>
+                    <a href="#">Help</a>
+                </div>
+
+                <div class="sidebar__logout">
+                    <i class="fa fa-power-off"></i>
+                    <a href="/choicecards">Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script type="text/javascript" src="/js/scriptdashboard.js"></script>
+</body>
+
+</html>
