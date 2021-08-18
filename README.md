@@ -18,6 +18,14 @@ For Backend:
  •	MySQL, JavaScript, NodeJs
  
  
+ ## Output Screen Shots:
+ 
+ #HomePage:
+ 
+ ![image](https://user-images.githubusercontent.com/53164503/129842681-0f71e9c4-0dac-446b-a9cb-a6df40772ed1.png)
+
+
+ 
  
 
 
